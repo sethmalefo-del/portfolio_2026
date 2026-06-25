@@ -44,9 +44,9 @@ const projects = [
   {
     emoji: '🌐',
     badge: 'Web App',
-    title: 'NexaCommerce',
-    desc: 'A full-stack e-commerce platform with real-time inventory, Stripe payments, and an AI-powered product recommendation engine.',
-    tags: ['Next.js', 'Stripe', 'Prisma', 'PostgreSQL'],
+    title: 'Weather App',
+    desc: 'A full functional weather app platform with real-time weather updates globally.',
+    tags: ['HTML', 'CSS', 'JAVASCRIPT', ],
     color: 'linear-gradient(135deg,rgba(139,92,246,0.15),rgba(6,182,212,0.08))',
   },
   {
@@ -60,7 +60,7 @@ const projects = [
   {
     emoji: '🤖',
     badge: 'AI Tool',
-    title: 'CodeMentor AI',
+    title: 'CodeMentor  for Proraminng Languages',
     desc: 'An AI coding assistant that reviews PRs, suggests refactors, and teaches best practices in real-time.',
     tags: ['OpenAI', 'Node.js', 'GitHub API', 'Vue.js'],
     color: 'linear-gradient(135deg,rgba(245,158,11,0.15),rgba(139,92,246,0.08))',
@@ -69,25 +69,26 @@ const projects = [
 const experience = [
   {
     icon: '🚀',
-    role: 'Senior Full-Stack Developer',
-    company: 'TechForward Inc.',
-    period: '2024 – Present',
-    desc: 'Leading the rebuild of the core product from monolith to microservices, resulting in a 3× performance improvement. Mentoring a team of 6 developers.',
+    role: 'Junior Full-Stack Developer',
+    company: 'TechBridle Foundation.',
+    period: '2026 – Present',
+    desc: 'A learning platform with a hands-on-experience plus buildup projects to elevate students.',
   },
   {
     icon: '💡',
     role: 'Frontend Engineer',
-    company: 'PixelCraft Studio',
-    period: '2022 – 2024',
-    desc: 'Built design systems from scratch, implemented complex animations, and reduced bundle size by 40% through code-splitting and lazy loading.',
+    company: 'Empower AI',
+    period: 'March – 2026',
+    desc: 'A build up project that was built by last years students in the Foundation. I had the experience to test, update, review and buildng up on my Agile methodology ad collaborating with the team..',
   },
+
   {
     icon: '🌱',
     role: 'Junior Developer',
-    company: 'Startup Foundry',
-    period: '2021 – 2022',
-    desc: 'Developed internal tools and client-facing dashboards using React and Node.js. Shipped 5 MVPs in under 12 months.',
-  },
+    company: 'Start-up FlyRank AI',
+    period: 'July-2026',
+    desc: 'A new platform i had embarked on to sharpen my skill using Real-time data and Clients.'
+    }
 ]
 /* ── COMPONENT ─────────────────────────────────────────────── */
 function App() {
@@ -106,7 +107,7 @@ function App() {
       {/* ── NAV ── */}
       <nav className="nav" style={scrolled ? { background: 'rgba(10,11,18,0.95)' } : {}}>
         <div className="nav-logo">
-          Ofentse<span>.</span>dev
+          Seth<span>.</span>dev
         </div>
         <div className="nav-links">
           <a href="#skills">Skills</a>
@@ -242,7 +243,7 @@ function App() {
             <span className="section-tag">Journey</span>
             <h2 className="section-title">Experience</h2>
             <p className="section-desc">
-              My professional journey building products people love.
+              My professional journey building products people love and helping in the community & businesses at large.
             </p>
           </div>
           <div className="timeline">
@@ -278,7 +279,7 @@ function App() {
               If you like what you see — let's talk! 🚀
             </p>
             <div className="contact-links">
-              <a href="mailto:ofentse@example.com" className="contact-link">
+              <a href="mailto:setlhomara@gmail.com" className="contact-link">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 Email Me
               </a>
@@ -290,17 +291,13 @@ function App() {
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM6.93 20.45H3.74V9h3.19v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.44c.98 0 1.79-.77 1.79-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
                 LinkedIn
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="contact-link">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                Twitter / X
-              </a>
             </div>
           </div>
         </div>
       </section>
       {/* ── FOOTER ── */}
       <footer className="footer">
-        <p>Designed &amp; Built with <span>♥</span> by Ofentse Botshelo · {new Date().getFullYear()}</p>
+        <p>Designed &amp; Built with <span>♥</span> by Seth Malefo · {new Date().getFullYear()}</p>
       </footer>
     </div>
   )
