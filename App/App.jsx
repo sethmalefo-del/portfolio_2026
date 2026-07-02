@@ -45,25 +45,61 @@ const projects = [
     emoji: '🌐',
     badge: 'Web App',
     title: 'Weather App',
-    desc: 'A full functional weather app platform with real-time weather updates globally.',
-    tags: ['HTML', 'CSS', 'JAVASCRIPT', ],
+    desc: 'A full functional weather app platform with real-time weather updates globally using live weather data.',
+    tags: ['JavaScript', 'API', 'HTML', 'CSS'],
     color: 'linear-gradient(135deg,rgba(139,92,246,0.15),rgba(6,182,212,0.08))',
+    github: 'https://github.com/sethmalefo-del/weather-app-project',
+    demo: 'https://github.com/sethmalefo-del/weather-app-project',
   },
   {
-    emoji: '📊',
-    badge: 'Dashboard',
-    title: 'PulseAnalytics',
-    desc: 'Real-time analytics dashboard with interactive charts, custom report generation, and multi-tenant support.',
-    tags: ['React', 'D3.js', 'WebSocket', 'Redis'],
+    emoji: '💰',
+    badge: 'Finance Tool',
+    title: 'Budget Tracker',
+    desc: 'Smart budget tracking application to monitor expenses and manage personal finances efficiently.',
+    tags: ['JavaScript', 'Local Storage', 'HTML', 'CSS'],
     color: 'linear-gradient(135deg,rgba(6,182,212,0.15),rgba(245,158,11,0.08))',
+    github: 'https://github.com/sethmalefo-del/BudgetTracker',
+    demo: 'https://github.com/sethmalefo-del/BudgetTracker',
+  },
+  {
+    emoji: '🎵',
+    badge: 'Media Player',
+    title: 'Soulify Music Player',
+    desc: 'A sleek music player application with intuitive controls and beautiful UI for music lovers.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    color: 'linear-gradient(135deg,rgba(245,158,11,0.15),rgba(139,92,246,0.08))',
+    github: 'https://github.com/sethmalefo-del/Soulify-Music-player',
+    demo: 'https://github.com/sethmalefo-del/Soulify-Music-player',
+  },
+  {
+    emoji: '✅',
+    badge: 'Productivity',
+    title: 'Todo Meter',
+    desc: 'A meter-based to-do list application that visualizes your productivity progress with interactive metrics.',
+    tags: ['JavaScript', 'React', 'UI/UX'],
+    color: 'linear-gradient(135deg,rgba(139,92,246,0.12),rgba(6,182,212,0.08))',
+    github: 'https://github.com/sethmalefo-del/todometer',
+    demo: 'https://github.com/sethmalefo-del/todometer',
+  },
+  {
+    emoji: '🏦',
+    badge: 'Banking App',
+    title: 'Banking Application',
+    desc: 'A comprehensive banking application showcasing modern web design and functional finance management.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    color: 'linear-gradient(135deg,rgba(6,182,212,0.12),rgba(245,158,11,0.08))',
+    github: 'https://github.com/sethmalefo-del/banking-application',
+    demo: 'https://github.com/sethmalefo-del/banking-application',
   },
   {
     emoji: '🤖',
-    badge: 'AI Tool',
-    title: 'CodeMentor for Programming Languages',
-    desc: 'An AI coding assistant that reviews PRs, suggests refactors, and teaches best practices in real-time.',
-    tags: ['OpenAI', 'Node.js', 'GitHub API', 'Vue.js'],
-    color: 'linear-gradient(135deg,rgba(245,158,11,0.15),rgba(139,92,246,0.08))',
+    badge: 'AI Platform',
+    title: 'OM1 - AI Runtime',
+    desc: 'Modular AI runtime for robots - an innovative platform for robotics and AI integration.',
+    tags: ['Python', 'AI', 'Robotics', 'Module Design'],
+    color: 'linear-gradient(135deg,rgba(245,158,11,0.12),rgba(139,92,246,0.08))',
+    github: 'https://github.com/sethmalefo-del/OM1',
+    demo: 'https://github.com/sethmalefo-del/OM1',
   },
 ]
 const experience = [
@@ -221,13 +257,13 @@ function App() {
                   <h3 className="project-title">{p.title}</h3>
                   <p className="project-desc">{p.desc}</p>
                   <div className="project-links">
-                    <a href="#" className="project-link">
+                    <a href={p.github} target="_blank" rel="noreferrer" className="project-link">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.04c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.1-.77.42-1.3.76-1.6-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.18 0 0 1-.32 3.3 1.23.96-.27 1.98-.4 3-.41 1.02.01 2.04.14 3 .41 2.29-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.47 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.69.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
                       GitHub
                     </a>
-                    <a href="#" className="project-link">
+                    <a href={p.demo} target="_blank" rel="noreferrer" className="project-link">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                      Live Demo
+                      View Project
                     </a>
                   </div>
                 </div>
@@ -283,7 +319,7 @@ function App() {
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 Email Me
               </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="contact-link">
+              <a href="https://github.com/sethmalefo-del" target="_blank" rel="noreferrer" className="contact-link">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.04c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.1-.77.42-1.3.76-1.6-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.18 0 0 1-.32 3.3 1.23.96-.27 1.98-.4 3-.41 1.02.01 2.04.14 3 .41 2.29-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.47 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.69.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
                 GitHub
               </a>
