@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import profilePhoto from './assets/profile.jpg'
+import profilePhoto from './assets/seth.jpg'
 import './App.css'
 /* ── DATA ──────────────────────────────────────────────────── */
 const skills = [
@@ -60,7 +60,7 @@ const projects = [
   {
     emoji: '🤖',
     badge: 'AI Tool',
-    title: 'CodeMentor  for Proraminng Languages',
+    title: 'CodeMentor for Programming Languages',
     desc: 'An AI coding assistant that reviews PRs, suggests refactors, and teaches best practices in real-time.',
     tags: ['OpenAI', 'Node.js', 'GitHub API', 'Vue.js'],
     color: 'linear-gradient(135deg,rgba(245,158,11,0.15),rgba(139,92,246,0.08))',
@@ -79,7 +79,7 @@ const experience = [
     role: 'Frontend Engineer',
     company: 'Empower AI',
     period: 'March – 2026',
-    desc: 'A build up project that was built by last years students in the Foundation. I had the experience to test, update, review and buildng up on my Agile methodology ad collaborating with the team..',
+    desc: 'A build up project that was built by last years students in the Foundation. I had the experience to test, update, review and building up on my Agile methodology and collaborating with the team.',
   },
 
   {
@@ -87,8 +87,8 @@ const experience = [
     role: 'Junior Developer',
     company: 'Start-up FlyRank AI',
     period: 'July-2026',
-    desc: 'A new platform i had embarked on to sharpen my skill using Real-time data and Clients.'
-    }
+    desc: 'A new platform i had embarked on to sharpen my skill using Real-time data and Clients.',
+  },
 ]
 /* ── COMPONENT ─────────────────────────────────────────────── */
 function App() {
@@ -126,7 +126,7 @@ function App() {
               Available for work
             </div>
             <h1 className="hero-title">
-              Hi, I'm <span className="gradient-text">Ofentse</span>
+              Hi, I'm <span className="gradient-text">Seth</span>
               <br />Full-Stack Dev
             </h1>
             <p className="hero-desc">
@@ -164,7 +164,7 @@ function App() {
             <div className="hero-photo-ring">
               <img
                 src={profilePhoto}
-                alt="Ofentse Botshelo"
+                alt="Seth Malefo"
                 className="hero-photo"
               />
             </div>
@@ -222,7 +222,7 @@ function App() {
                   <p className="project-desc">{p.desc}</p>
                   <div className="project-links">
                     <a href="#" className="project-link">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.04c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.06 1.82 2.8 1.3 3.48.99.1-.77.41-1.3.75-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.04c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.1-.77.42-1.3.76-1.6-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.18 0 0 1-.32 3.3 1.23.96-.27 1.98-.4 3-.41 1.02.01 2.04.14 3 .41 2.29-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.47 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.69.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
                       GitHub
                     </a>
                     <a href="#" className="project-link">
@@ -284,11 +284,11 @@ function App() {
                 Email Me
               </a>
               <a href="https://github.com" target="_blank" rel="noreferrer" className="contact-link">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.04c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.06 1.82 2.8 1.3 3.48.99.1-.77.41-1.3.75-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.04c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.32-1.74-1.32-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.1-.77.42-1.3.76-1.6-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.18 0 0 1-.32 3.3 1.23.96-.27 1.98-.4 3-.41 1.02.01 2.04.14 3 .41 2.29-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.47 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.69.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
                 GitHub
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="contact-link">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM6.93 20.45H3.74V9h3.19v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.44c.98 0 1.79-.77 1.79-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.67 7.68c-1.15 0-2.07-.93-2.07-2.07 0-1.14.92-2.07 2.07-2.07 1.14 0 2.06.93 2.06 2.07 0 1.14-.92 2.07-2.06 2.07zm1.81 12.77H3.86V9h3.62v11.45zM22.22 0H1.77C.79 0 0 .78 0 1.74v20.52C0 23.22.79 24 1.77 24h20.45c.98 0 1.77-.78 1.77-1.74V1.74C24 .78 23.2 0 22.22 0z"/></svg>
                 LinkedIn
               </a>
             </div>
